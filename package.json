@@ -1,0 +1,11 @@
+{
+  "name": "load_test",
+  "version": "1.0.0",
+  "scripts": {
+    "example": "node ./node_modules/artillery/bin/artillery run ./test/example.yml"
+  },
+  "dependencies": {
+    "artillery": "*"
+  },
+  "author": "Kruthika"
+}

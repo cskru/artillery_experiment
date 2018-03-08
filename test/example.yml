@@ -1,0 +1,14 @@
+config:
+  payload:
+    path: "example.csv"
+    fields:
+      - "id"
+    order: "sequence"
+  target: 'http://localhost:8000'
+  phases:
+    - duration: 1
+      arrivalCount: 80
+scenarios:
+  - flow:
+    - get:
+        url: "/path/{{ id }}"
